@@ -1,64 +1,70 @@
 {$IFDEF VER80}   {Delphi 1}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER80}
 
 {$IFDEF VER90}   {Delphi 2}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER90}
 
 {$IFDEF VER100}   {Delphi 3}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER100}
 
 {$IFDEF VER120}   {Delphi 4}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER120}
 
 {$IFDEF VER130}   {Delphi 5}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER130}
 
 {$IFDEF VER140}   {Delphi 6}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER140}
 
 {$IFDEF VER150}   {Delphi 7}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER150}
 
 {$IFDEF VER160}   {Delphi 8}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER160}
 
 {$IFDEF VER170}   {Delphi 9}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER170}
 
 {$IFDEF VER180}   {Delphi 10}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER180}
 
 {$IFDEF VER185}   {Delphi 11 - Spacely}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER185}
 
 {$IFDEF VER190}   {Delphi 11 - Highlander and Delphi 12}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER190}
 
 {$IFDEF VER200}   {Delphi 12}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER200}
 
 {$IFDEF VER210}   {Delphi 2010}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF VER210}
 
 {$IFDEF DCC}   {Delphi XE and newer versions}
 {$DEFINE DELPHI}
-{$ENDIF}
+{$ENDIF DCC}
 
 {$IFDEF FPC}   {Lazarus and Free Pascal}
 {$DEFINE LAZARUS}
-{$ENDIF}
+{$ENDIF FPC}
+
+{$IFDEF DELPHI}
+{$IF CompilerVersion >= 23}
+{$DEFINE NameSpace}
+{$ENDIF CompilerVersion}
+{$ENDIF DELPHI}
 
